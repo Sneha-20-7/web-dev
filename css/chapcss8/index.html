@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .con {
+            background-color: red;
+            height: 455px;
+        }
+        .box {
+            border: 2px solid black;
+            display: inline-block;
+            /* transform-origin: 0; */
+            /* transform: translate(134px, 56px) rotate(45deg); */
+            /* transform: scale(4,7); */
+            /* transform: skew(11deg, 10deg); */ 
+        }
+        img {
+            width: 446px;
+            /* transition-property: all;
+            transition-duration: .1s;
+            transition-timing-function: ease-in;
+            transition-delay: 2sec; */
+            transition: width is ease-in-out 2s;
+        }
+    </style>
+</head>
+<body>
+    <div class="con">
+        <div class="box">
+            <img id="myImage" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQoUEzLKGWhf-Oc2y46H9-0xSXITsgTQklZNQ&s" alt="">
+            <button id="btn">Toggle</button>
+        </div>
+    </div>
+    
+    <script>
+        const myImage = document.getElementById("myImage");
+        myImage.style.width = '146px';
+        document.getElementById("btn").addEventListener("click", () => {
+            if (myImage.style.width === '546px') {
+                myImage.style.width = '146px';
+            } else {
+                myImage.style.width = '546px';
+            }
+        });
+    </script>
+</body>
+</html>
+``

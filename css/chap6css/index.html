@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .con{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            background-color: beige;
+            height: 100vh;
+            align-items: center;
+            align-content: center;
+            flex-wrap: wrap;
+            flex-grow: 2;
+            
+        }
+        .box1{
+            width: 345px;
+            height: 234px;
+            background-color: skyblue;
+            border: 2px solid rgb(2, 104, 145);
+            order: 4;
+            align-self: flex-end;
+            flex-grow: 1;
+            
+            
+        }
+        .box2{
+            width: 345px;
+            height: 234px;
+            background-color: pink;
+            border: 2px solid violet;
+            
+        }
+       
+
+    </style>
+</head>
+<body>
+    <div class="con">
+        <div class="box1">Box1</div>
+        <div class="box2">Box2</div>
+        <div class="box2">Box3</div>
+        <div class="box2">Box4</div>
+    </div>
+    
+</body>
+</html>
